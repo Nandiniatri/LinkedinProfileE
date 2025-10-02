@@ -12,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    border: solid;
 }
 
 .container {
@@ -20,6 +21,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    border: solid;
 }
 
 .left .tag {

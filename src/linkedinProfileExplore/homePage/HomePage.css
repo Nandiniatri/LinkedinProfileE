@@ -138,3 +138,121 @@ body {
     padding: 0;
     color: #374151;
 }
+
+
+.resume-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 320px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    font-family: Arial, sans-serif;
+}
+
+.score-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 15px;
+}
+
+.score-circle {
+    width: 80px;
+    height: 80px;
+    border: 5px solid #f97316;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: #333;
+}
+
+.main-score {
+    font-weight: bold;
+    color: #111;
+    font-size: 16px;
+}
+
+.sub-score {
+    font-size: 13px;
+    color: #666;
+}
+
+.breakdown {
+    margin-top: 20px;
+}
+
+.breakdown h4 {
+    font-size: 14px;
+    color: #374151;
+    margin-bottom: 10px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.stat {
+    text-align: center;
+    flex: 1;
+}
+
+.label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #374151;
+}
+
+.impact strong {
+    color: #16a34a;
+}
+
+.brevity strong {
+    color: #2563eb;
+}
+
+.status.green {
+    color: #16a34a;
+    font-size: 12px;
+}
+
+.status.orange {
+    color: #ea580c;
+    font-size: 12px;
+}
+
+.impact-score {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.impact-score .circle {
+    width: 70px;
+    height: 70px;
+    border: 3px solid #22c55e;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #111;
+}
+
+.points {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    color: #374151;
+}
+
+.points li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}

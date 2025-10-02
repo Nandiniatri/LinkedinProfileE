@@ -24,28 +24,33 @@ export default function Home() {
                 </section>
 
                 <section className="right">
-                    <div className="card">
-                        <div className="score-header">
-                            <div className="score-circle">82</div>
-                            <div>
-                                <p className="score-text">Your resume scored 82</p>
-                                <p className="score-sub">out of 100</p>
+                    <div className="resume-card">
+                        <div className="score-section">
+                            <div className="score-circle">85</div>
+                            <div className="score-texts">
+                                <p className="main-score">Your resume scored 85</p>
+                                <p className="sub-score">out of 100</p>
                             </div>
                         </div>
 
                         <div className="breakdown">
-                            <h4>Breakdown</h4>
+                            <h4>BREAKDOWN</h4>
                             <div className="stats">
-                                <div className="stat good">
-                                    <p>Impact</p>
+                                <div className="stat impact">
+                                    <p className="label">IMPACT</p>
                                     <strong>100/100</strong>
-                                    <span>Excellent</span>
+                                    <span className="status green">EXCELLENT</span>
                                 </div>
-                                <div className="stat avg">
-                                    <p>Brevity</p>
-                                    <strong>65/100</strong>
-                                    <span>Average</span>
+                                <div className="stat brevity">
+                                    <p className="label">BREVITY</p>
+                                    <strong>72/100</strong>
+                                    <span className="status orange">AVERAGE</span>
                                 </div>
+                            </div>
+
+                            <div className="impact-score">
+                                <div className="circle">92</div>
+                                <p>Impact Score</p>
                             </div>
 
                             <ul className="points">
@@ -60,3 +65,5 @@ export default function Home() {
         </main>
     );
 }
+
+

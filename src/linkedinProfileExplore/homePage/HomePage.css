@@ -11,8 +11,6 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    /* border: solid red; */
 }
 
 .container {
@@ -21,14 +19,11 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 9rem;
-    /* border: solid; */
     justify-content: center;
     padding: 2rem;
-    /* border: solid red; */
 }
 
 .left {
-    /* border: solid; */
     padding: 2.6rem;
 }
 
@@ -131,8 +126,8 @@ body {
 }
 
 .score-circle {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border: 5px solid #f97316;
     border-radius: 50%;
     display: flex;
@@ -140,22 +135,24 @@ body {
     justify-content: center;
     font-weight: bold;
     font-size: 22px;
-    color: #333;
+    color: white;
 }
 
 .main-score {
     font-weight: bold;
-    color: #111;
-    font-size: 16px;
+    color: #f97316;
+    font-size: 19px;
 }
 
 .sub-score {
-    font-size: 13px;
+    font-size: 15px;
     color: #666;
 }
 
 .breakdown {
     margin-top: 20px;
+    border: solid red;
+    line-height: 24px;
 }
 
 .breakdown h4 {
@@ -206,8 +203,8 @@ body {
 }
 
 .impact-score .circle {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     border: 3px solid #22c55e;
     border-radius: 50%;
     margin: 0 auto;
@@ -219,14 +216,23 @@ body {
     color: #111;
 }
 
+.impact-score p {
+    border: solid red;
+    color: #f43f5e;
+    position: relative;
+    bottom: 36px;
+    transform-origin: 0 120px;
+}
+
 .points {
     list-style: none;
     padding: 0;
-    margin-top: 15px;
+    margin-top: 18px;
     color: #374151;
+    border: solid;
 }
 
 .points li {
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 16px;
 }

@@ -58,6 +58,8 @@ export default function Home() {
                                 </div>
 
                                 <ul className="points">
+                                    <li>✔ Profile Correction</li>
+                                    <li>✔ Skills Updated</li>
                                     <li>✔ Quantifying impact</li>
                                     <li>✔ Strong action verbs</li>
                                     <li>✔ No spelling errors</li>

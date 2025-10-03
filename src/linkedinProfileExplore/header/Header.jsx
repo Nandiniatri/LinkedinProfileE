@@ -5,7 +5,7 @@ const Header = () => (
         <header className="sh-header">
             <div className="sh-container">
                 <div className="sh-left">
-                    <span className="sh-brand">RAELIN</span>
+                    <span className="sh-brand">Linkedin Review</span>
                 </div>
 
                 <div className="sh-right">

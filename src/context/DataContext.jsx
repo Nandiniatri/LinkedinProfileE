@@ -1,12 +1,16 @@
 import { createContext } from "react";
 
-const DataContext = createContext();
+export const DataContext = createContext();
 
-const DataProvider = () => {
-    
+const DataProvider = ({ children }) => {
+
+    const loginAuthComp = () => {
+        alert('Login Auth')
+    }
+
     return (
         <DataContext.Provider value={{
-
+            loginAuthComp
         }}>
             {children}
         </DataContext.Provider>

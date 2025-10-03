@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import './Header.css';
 import { DataContext } from '../../context/DataContext';
+import Button from '../../components/Button';
 
 const Header = () => {
     const { loginAuthComp } = useContext(DataContext);
@@ -14,9 +15,9 @@ const Header = () => {
                     </div>
 
                     <div className="sh-right">
-                        <button className="sh-btn">
+                        <Button className="sh-btn" onClick={loginAuthComp}>
                             {loginAuthComp ? "Logout" : "Login"}
-                        </button>
+                        </Button>
                     </div>
                 </div>
             </header>

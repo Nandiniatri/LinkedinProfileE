@@ -5,19 +5,23 @@ import { DataContext } from '../../context/DataContext';
 const Header = () => {
     const { loginAuthComp } = useContext(DataContext);
 
-    <div>
-        <header className="sh-header">
-            <div className="sh-container">
-                <div className="sh-left">
-                    <span className="sh-brand">Linkedin Review</span>
-                </div>
+    return (
+        <div>
+            <header className="sh-header">
+                <div className="sh-container">
+                    <div className="sh-left">
+                        <span className="sh-brand">Linkedin Review</span>
+                    </div>
 
-                <div className="sh-right">
-                    <button className="sh-btn" onClick={loginAuthComp}>Login</button>
+                    <div className="sh-right">
+                        <button className="sh-btn">
+                            {loginAuthComp ? "Logout" : "Login"}
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </header>
-    </div>
-}
+            </header>
+        </div>
+    );
+};
 
 export default Header;

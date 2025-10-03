@@ -1,12 +1,13 @@
 import React from "react";
 import './HomePage.css';
-
+import Header from "../header/Header";
 
 
 export default function Home() {
     return (
         <>
-            <Headers />
+            <Header />
+
             <main className="main">
                 <div className="container">
                     <section className="left">

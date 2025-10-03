@@ -43,18 +43,20 @@ export default function Home() {
                                     <div className="stat impact">
                                         <p className="label">IMPACT</p>
                                         <strong>100/100</strong>
+                                        <br />
                                         <span className="status green">EXCELLENT</span>
                                     </div>
                                     <div className="stat brevity">
                                         <p className="label">BREVITY</p>
                                         <strong>72/100</strong>
+                                        <br />
                                         <span className="status orange">AVERAGE</span>
                                     </div>
                                 </div>
 
                                 <div className="impact-score">
                                     <div className="circle">92</div>
-                                    <p>Impact Score</p>
+                                    {/* <p>Impact Score</p> */}
                                 </div>
 
                                 <ul className="points">

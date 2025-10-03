@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    border: solid red;
+    /* border: solid red; */
 }
 
 .container {
@@ -21,14 +21,17 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 9rem;
-    border: solid;
+    /* border: solid; */
     justify-content: center;
     padding: 2rem;
-    border: solid;
+    /* border: solid red; */
 }
-.left{
-    border: solid;
+
+.left {
+    /* border: solid; */
+    padding: 2.6rem;
 }
+
 .left .tag {
     font-size: 12px;
     letter-spacing: 2px;
@@ -37,7 +40,7 @@ body {
 
 .title {
     margin: 20px 0;
-    font-size: 40px;
+    font-size: 47px;
     font-weight: bold;
 }
 
@@ -51,47 +54,35 @@ body {
 
 .desc {
     margin-top: 1rem;
-    line-height: 1.5;
+    line-height: 1.8;
+    font-size: 16px;
 }
 
-.buttons {
+.home-buttons {
     margin-top: 1.5rem;
 }
 
 .btn-primary {
     background: #34d399;
-    color: #111;
-    padding: 12px 20px;
+    color: white;
+    padding: 13px 30px;
     border-radius: 10px;
     border: none;
     margin-right: 1rem;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .btn-secondary {
     background: rgba(99, 102, 241, 0.7);
     color: white;
-    padding: 12px 20px;
+    padding: 13px 30px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    font-size: 15px;
 }
 
-/* .right .card {
-    background: white;
-    color: #111;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-    border: solid b;
-} */
-
-/* .score-header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    border: solid;
-} */
 
 .score-circle {
     width: 80px;
@@ -105,16 +96,6 @@ body {
     font-size: 24px;
     color: #111;
 }
-/* 
-.breakdown {
-    margin-top: 20px;
-} */
-
-/* .breakdown h4 {
-    font-size: 14px;
-    text-transform: uppercase;
-    color: gray;
-} */
 
 .stats {
     display: grid;
@@ -129,29 +110,13 @@ body {
     text-align: center;
 }
 
-/* .stat.good {
-    background: #dcfce7;
-    color: #166534;
-} */
-
-/* .stat.avg {
-    background: #ffedd5;
-    color: #9a3412;
-} */
-
-/* .points {
-    margin-top: 15px;
-    list-style: none;
-    padding: 0;
-    color: #374151;
-} */
 
 
 .resume-card {
     background: white;
     border-radius: 20px;
     padding: 20px;
-    max-width: 390px;
+    max-width: 400px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     font-family: Arial, sans-serif;
     height: 83vh;
@@ -194,9 +159,10 @@ body {
 }
 
 .breakdown h4 {
-    font-size: 14px;
+    font-size: 17px;
     color: #374151;
     margin-bottom: 10px;
+    border: solid;
 }
 
 .stats {

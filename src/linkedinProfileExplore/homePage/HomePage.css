@@ -25,7 +25,6 @@ body {
 
 .left {
     padding: 2.6rem;
-    /* border: solid; */
 }
 
 .left .tag {
@@ -153,7 +152,6 @@ body {
 
 .breakdown {
     margin-top: 20px;
-    /* border: solid red; */
     line-height: 22px;
 }
 
@@ -161,7 +159,6 @@ body {
     font-size: 17px;
     color: #374151;
     margin-bottom: 10px;
-    /* border: solid; */
 }
 
 .stats {

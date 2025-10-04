@@ -32,7 +32,7 @@ export default function Home() {
                             <div className="score-section">
                                 <div className="score-circle">85</div>
                                 <div className="score-texts">
-                                    <p className="main-score">Your resume scored 85</p>
+                                    <p className="main-score">Your Linkedin scored 85</p>
                                     <p className="sub-score">out of 100</p>
                                 </div>
                             </div>

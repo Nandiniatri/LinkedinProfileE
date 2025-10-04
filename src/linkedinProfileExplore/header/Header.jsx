@@ -16,7 +16,7 @@ const Header = () => {
 
                     <div className="sh-right">
                         <Button className="sh-btn" onClick={loginAuthComp}>
-                            {loginAuthComp ? "Logout" : "Login"}
+                            Login
                         </Button>
                     </div>
                 </div>

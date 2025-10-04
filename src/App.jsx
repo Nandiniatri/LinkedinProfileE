@@ -6,8 +6,8 @@ function App() {
 
   return (
     <>
-      {/* <LinkedinProfileExplore /> */}
-      <LoginPage />
+      <LinkedinProfileExplore />
+      {/* <LoginPage /> */}
     </>
   )
 }

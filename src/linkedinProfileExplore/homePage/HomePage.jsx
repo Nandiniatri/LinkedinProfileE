@@ -12,8 +12,8 @@ export default function Home() {
                 <div className="container">
                     <section className="left">
                         <h1 className="title">
-                            Improve your <span className="highlight">resume</span> <br />
-                            and <span className="highlight2">LinkedIn profile</span>
+                            Improve your <span className="highlight">Linkedin profile</span>
+
                         </h1>
                         <p className="desc">
                             Designed by top recruiters — our AI-powered platform gives instant,

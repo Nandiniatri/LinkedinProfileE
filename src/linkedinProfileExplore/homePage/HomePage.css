@@ -25,6 +25,7 @@ body {
 
 .left {
     padding: 2.6rem;
+    /* border: solid; */
 }
 
 .left .tag {
@@ -35,12 +36,13 @@ body {
 
 .title {
     margin: 20px 0;
-    font-size: 47px;
+    font-size: 65px;
     font-weight: bold;
 }
 
 .highlight {
     color: #fffacd;
+    font-size: 59px;
 }
 
 .highlight2 {

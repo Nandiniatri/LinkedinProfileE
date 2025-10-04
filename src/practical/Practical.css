@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /* background: #f7f9fc; */
+}
+
+.header {
+    text-align: center;
+    background: #0077b5;
+    color: white;
+    padding: 20px;
+    border-bottom: 3px solid #005983;
+}
+
+.skill-checker {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+button {
+    margin-top: 12px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #0077b5;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #005983;
+}
+
+.results {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #f0f4f9;
+    color: black;
+}

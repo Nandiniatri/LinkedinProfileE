@@ -1,0 +1,73 @@
+{
+    "frontend": {
+        "core": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Angular",
+            "Vue"
+        ],
+        "advanced": [
+            "State Management (Redux/Context)",
+            "API Integration",
+            "TypeScript",
+            "Testing (Jest, RTL)"
+        ]
+    },
+    "backend": {
+        "core": [
+            "Node.js",
+            "Express.js",
+            "REST APIs",
+            "Databases (SQL/MongoDB)"
+        ],
+        "advanced": [
+            "Authentication",
+            "GraphQL",
+            "Microservices",
+            "Testing (Jest/Mocha)"
+        ]
+    },
+    "fullstack": {
+        "core": [
+            "Frontend (React/Angular)",
+            "Backend (Node.js/Express)",
+            "Databases"
+        ],
+        "advanced": [
+            "DevOps Basics",
+            "Cloud (AWS/GCP)",
+            "CI/CD",
+            "Testing"
+        ]
+    },
+    "devops": {
+        "core": [
+            "Linux",
+            "Docker",
+            "CI/CD",
+            "Git"
+        ],
+        "advanced": [
+            "Kubernetes",
+            "Terraform",
+            "Monitoring (Prometheus, Grafana)",
+            "Cloud Platforms"
+        ]
+    },
+    "data_scientist": {
+        "core": [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Matplotlib"
+        ],
+        "advanced": [
+            "Machine Learning",
+            "Deep Learning",
+            "SQL",
+            "Cloud ML Services"
+        ]
+    }
+}

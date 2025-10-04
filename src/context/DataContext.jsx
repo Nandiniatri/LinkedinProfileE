@@ -7,7 +7,6 @@ const DataProvider = ({ children }) => {
     const navigate = useNavigate();
 
     const loginAuthComp = () => {
-        alert('Login Auth');
         navigate('/login');
     }
 

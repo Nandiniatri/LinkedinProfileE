@@ -3,6 +3,7 @@ import './App.css'
 import LinkedinProfileExplore from './linkedinProfileExplore/LinkedinProfileExplore'
 import LoginPage from './linkedinProfileExplore/login/LoginPage'
 import SkillChecker from './practical/Practical'
+import ProfileImageChecker from './practical/profile'
 
 function App() {
 
@@ -12,7 +13,9 @@ function App() {
         <Route path="/" element={<LinkedinProfileExplore />} />
         <Route path="/login" element={<LoginPage />} />
       </Routes> */}
+
       <SkillChecker />
+      {/* <ProfileImageChecker /> */}
     </>
   )
 }

@@ -10,13 +10,13 @@ function App() {
 
   return (
     <>
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<LinkedinProfileExplore />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/linkedinLink" element={<LinkedInLinkPastePage />} />
-      </Routes>
+      </Routes> */}
 
-      {/* <SkillChecker /> */}
+      <SkillChecker />
       {/* <ProfileImageChecker /> */}
     </>
   )

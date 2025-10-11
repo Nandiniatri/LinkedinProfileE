@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./LinkedLinkPastePage.css";
+import "./LinkedInLinkPastePage.css";
 
-export default function LinkedInAnalyzer() {
+export default function LinkedInLinkPastePage() {
     const [url, setUrl] = useState("");
 
     const handleAnalyze = () => {
@@ -15,7 +15,7 @@ export default function LinkedInAnalyzer() {
     return (
         <div className="analyzer-container">
             <header className="header">
-                <h2 className="logo">RESUME WORDED</h2>
+                <h2 className="logo">Linkedin Review</h2>
                 <nav className="nav">
                     <span>Products ▼</span>
                     <span>More ▼</span>

@@ -4,6 +4,7 @@ import LinkedinProfileExplore from './linkedinProfileExplore/LinkedinProfileExpl
 import LoginPage from './linkedinProfileExplore/login/LoginPage'
 import SkillChecker from './practical/Practical'
 import ProfileImageChecker from './practical/profile'
+import LinkedInLinkPastePage from './linkedinProfileExplore/linkedInLinkPaste/LinkedInLinkPastePage'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LinkedinProfileExplore />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/linkedinLink" element={<LinkedInLinkPastePage />} />
       </Routes>
 
       {/* <SkillChecker /> */}

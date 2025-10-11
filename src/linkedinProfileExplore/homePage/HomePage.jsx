@@ -1,9 +1,16 @@
 import React from "react";
 import './HomePage.css';
 import Header from "../header/Header";
+import { useNavigate } from "react-router-dom";
 
 
 export default function Home() {
+    const navigate = useNavigate();
+    
+    const handleGetStartLink = () => {
+        navigate('/linkedinLink')
+    }
+
     return (
         <>
             <Header />
@@ -22,7 +29,7 @@ export default function Home() {
                         </p>
 
                         <div className="home-buttons">
-                            <button className="btn-primary">Get started</button>
+                            <button className="btn-primary" onClick={handleGetStartLink}>Get started</button>
                             <button className="btn-secondary">See preview</button>
                         </div>
                     </section>

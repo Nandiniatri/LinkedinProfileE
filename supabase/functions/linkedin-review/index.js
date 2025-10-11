@@ -34,9 +34,66 @@
 
 
 
+// import { serve } from "https://deno.land/std@0.170.0/http/server.ts";
+
+// serve(async (req) => {
+//   try {
+//     const { linkedinURL } = await req.json();
+//     if (!linkedinURL)
+//       return new Response(JSON.stringify({ error: "LinkedIn URL required" }), { status: 400 });
+
+//     const OPENAI_API_KEY = Deno.env.get("OPENAI_API_KEY");
+//     if (!OPENAI_API_KEY)
+//       return new Response(JSON.stringify({ error: "API Key not found" }), { status: 500 });
+
+//     const response = await fetch("https://api.openai.com/v1/chat/completions", {
+//       method: "POST",
+//       headers: {
+//         "Authorization": `Bearer ${OPENAI_API_KEY}`,
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify({
+//         model: "gpt-4",
+//         messages: [
+//           { role: "system", content: "You are a LinkedIn recruiter giving profile improvement suggestions." },
+//           { role: "user", content: `Analyze this LinkedIn profile and provide detailed suggestions: ${linkedinURL}` }
+//         ],
+//         max_tokens: 800
+//       })
+//     });
+
+//     const data = await response.json();
+//     return new Response(JSON.stringify({ feedback: data.choices[0].message.content }), { status: 200 });
+
+//   } catch (err) {
+//     console.error(err);
+//     return new Response(JSON.stringify({ error: "Something went wrong" }), { status: 500 });
+//   }
+// });
+
+
+
+
+
+
+
+
+
 import { serve } from "https://deno.land/std@0.170.0/http/server.ts";
 
 serve(async (req) => {
+  // Handle CORS preflight
+  if (req.method === "OPTIONS") {
+    return new Response(null, {
+      status: 204,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "POST, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
+      },
+    });
+  }
+
   try {
     const { linkedinURL } = await req.json();
     if (!linkedinURL)
@@ -63,10 +120,18 @@ serve(async (req) => {
     });
 
     const data = await response.json();
-    return new Response(JSON.stringify({ feedback: data.choices[0].message.content }), { status: 200 });
 
+    return new Response(JSON.stringify({ feedback: data.choices[0].message.content }), {
+      status: 200,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
+    });
   } catch (err) {
     console.error(err);
-    return new Response(JSON.stringify({ error: "Something went wrong" }), { status: 500 });
+    return new Response(JSON.stringify({ error: "Something went wrong" }), {
+      status: 500,
+      headers: { "Access-Control-Allow-Origin": "*" },
+    });
   }
 });

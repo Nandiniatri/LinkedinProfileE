@@ -398,7 +398,7 @@ const ProfileImageChecker = () => {
 
         try {
             const res = await fetch(
-                "https://rlezesnrywymoobhejat.supabase.co.functions.supabase.co/linkedin-review",
+                "https://rlezesnrywymoobhejat.functions.supabase.co/linkedin-review",
                 {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },

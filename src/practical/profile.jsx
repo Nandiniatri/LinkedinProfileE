@@ -369,6 +369,19 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 import { useState } from "react";
 
 const ProfileImageChecker = () => {
@@ -384,16 +397,19 @@ const ProfileImageChecker = () => {
         setFeedback("");
 
         try {
-            const res = await fetch("http://localhost:5000/api/review", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ linkedinURL }),
-            });
+            const res = await fetch(
+                "https://rlezesnrywymoobhejat.supabase.co.functions.supabase.co/linkedin-review",
+                {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ linkedinURL }),
+                }
+            );
 
             const data = await res.json();
             setFeedback(data.feedback);
-        } catch (error) {
-            console.error(error);
+        } catch (err) {
+            console.error(err);
             alert("Error fetching review");
         } finally {
             setLoading(false);

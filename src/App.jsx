@@ -18,8 +18,8 @@ function App() {
       </Routes> */}
 
       {/* <SkillChecker /> */}
-      {/* <ProfileImageChecker /> */}
-      <ProfileAnalyzer />
+      <ProfileImageChecker />
+      {/* <ProfileAnalyzer /> */}
     </>
   )
 }

@@ -9,12 +9,12 @@ function App() {
 
   return (
     <>
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<LinkedinProfileExplore />} />
         <Route path="/login" element={<LoginPage />} />
-      </Routes> */}
+      </Routes>
 
-      <SkillChecker />
+      {/* <SkillChecker /> */}
       {/* <ProfileImageChecker /> */}
     </>
   )

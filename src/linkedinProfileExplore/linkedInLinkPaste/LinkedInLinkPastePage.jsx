@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./LinkedInLinkPastePage.css";
+import Header from "../header/Header";
 
 export default function LinkedInLinkPastePage() {
     const [url, setUrl] = useState("");
@@ -14,15 +15,7 @@ export default function LinkedInLinkPastePage() {
 
     return (
         <div className="analyzer-container">
-            <header className="header">
-                <h2 className="logo">Linkedin Review</h2>
-                <nav className="nav">
-                    <span>Products ▼</span>
-                    <span>More ▼</span>
-                    <span>Dashboard</span>
-                    <span>Logout</span>
-                </nav>
-            </header>
+            <Header />
 
             <div className="content">
                 <h3>Get a free LinkedIn profile review in just ten seconds.</h3>
